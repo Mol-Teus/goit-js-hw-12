@@ -3,7 +3,7 @@ import axios from 'axios';
 const perPage = 15;
 
 const requestParams = new URLSearchParams({
-  key: '33588137-20261db95d6a52f088d4718c9',
+  key:  '46874529-ef321ad5a592feec695df9124',
   q: '',
   image_type: 'photo',
   orientation: 'horizontal',
