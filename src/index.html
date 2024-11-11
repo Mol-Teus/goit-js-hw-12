@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vanilla App Template-hw12</title>
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+<body>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
-    </main>
+<main>
+  <form id="search-form" class="form">
+    <input class="search-field" type="text" placeholder="Search images..." />
+    <button class="btn" type="submit">Search</button>
+  </form>
+  <div id="top-loader" class="loader-container hidden"><span class="loader"></span></div>
+  <ul class="gallery"></ul>
 
-    <load src="./partials/footer.html" />
+  <form id="load-form" class="form load-more hidden">
+    <button class="btn" type="submit">Load more</button>
+  </form>
+  <div id="bottom-loader" class="loader-container hidden"><span class="loader"></span></div>
+  <div id="no-results" class="loader-container hidden">We're sorry, but you've reached the end of search results.</div>
 
-    <script type="module" src="./main.js"></script>
-  </body>
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-desc">
+        Made with ✨ by
+        <a
+          class="footer-link"
+          href="https://github.com/Mol-Teus"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Moltey
+        </a>
+      </p>
+    </div>
+  </footer>
+
+</main>
+<script type="module" src="./main.js"></script>
+</body>
 </html>
